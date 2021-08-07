@@ -1,0 +1,30 @@
+
+.imageDetailsContainer{
+    min-height: 300vmin;
+   
+}
+
+.imgContainerDetailsPage{
+    max-width: 900px;
+    min-height: 600px;
+    margin-right: 50%;
+    border: solid 5px;
+
+}
+
+.imgContainerDetailsPage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.explanationSection{
+    
+    max-width: 50%;
+    margin: auto;
+
+}
+
+.explanationSection p {
+    font-size:x-large
+}

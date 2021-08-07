@@ -1,0 +1,105 @@
+
+.imgContainer{
+width: 100%;
+position:relative;
+}
+
+.imgTreeBackGround{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.nav{
+    display: flex;                 
+}
+
+.navItems{
+    align-items: center;
+    
+}
+
+.universeText {
+    color: #aca9d6;
+}
+
+.titleHeaderAPOD{
+    position: absolute;
+    color: white;
+    text-align: center;
+    bottom: 30px;
+    top: 60%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.imgContainerApi{
+    position: absolute;
+    width:80%;
+    height: 500px;
+    bottom:-600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 10px;
+   
+    
+}
+
+
+.imgContainerGalaxySky{
+    width: 100%;
+    height:1100px;
+    position:relative;
+
+}
+.blurredBackGround{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 1250px;
+    background-color:  rgb(235, 134, 134);
+    opacity: .5;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    
+}
+
+.imgCards{
+    position: absolute;
+    height: min-content;
+    padding: 15px;
+    z-index: 2;
+
+}
+
+.titleHeaderAPOD h1{
+    font-size: 72px;
+    
+}
+
+@media (max-width:556px){
+    .titleHeaderAPOD h1{
+        font-size: 30px;
+    }
+}
+
+.titleHeaderAPOD p{
+    font-size: 48px;
+}
+
+@media (max-width:556px){
+    .titleHeaderAPOD p{
+        font-size: 28px;
+    }
+}
+#GalaxySky{
+   object-fit: cover;
+   width:100%;
+   height:100%
+   
+}
+
+
