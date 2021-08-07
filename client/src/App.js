@@ -1,24 +1,17 @@
-import React from 'react';
-import HomePage from './pages/HomePage/HomePage';
-import ImageDetails from './pages/ImageDetails/ImageDetails';
-import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom"
+import React from "react";
+import HomePage from "./pages/HomePage/HomePage";
+import ImageDetails from "./pages/ImageDetails/ImageDetails";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
-
-  
-
-
   return (
-    <div >
+    <div>
       <Router>
         <Switch>
           <Route exact path="/">
-            <Redirect to="/apodImages" />
-          </Route>
-          <Route path="/apodImages">
             <HomePage />
           </Route>
-          <Route path="/imageDetails">
+          <Route path="/apod/:date">
             <ImageDetails />
           </Route>
           <Route path="*">
@@ -26,7 +19,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-  
     </div>
   );
 }
